@@ -36,11 +36,9 @@ a {
   border-radius: 10px 10px 0 0;
   margin-top: 1%;
 }
-.form-buscar {
-  padding: 3% 0 3% 0;
-}
 .list-group {
   margin: 3% 3% 3% 0;
+  padding-left: 3%;
 }
 .logo-img {
   width: 95%;
