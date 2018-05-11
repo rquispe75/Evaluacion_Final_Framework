@@ -19,7 +19,7 @@ a {text-align: center; color: #000000 !important;}
 .logo-img {width: 95%;}
 .img-bt {width: 30px;}
 .glyphicon-user {font-size: 30px;}
-.magodeoz-img, .slayer-img {margin: 30% 0 0 0; width: 100%;}
+.magodeoz-img, .slayer-img {margin: 20% 0 5% 0; width: 100%;}
 
 /* NOTE: Adaptacion para dispositivos pequeños */
 @media all and (max-width: 450px) {
