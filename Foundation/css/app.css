@@ -7,16 +7,50 @@ body {
 div{
   border: 0px solid black;
 }
+h4 {
+font-family: 'Indie Flower', cursive;
+}
 .g-contenido {
   background: rgba(99, 163, 171, 0.60);
 }
 .g-encabezado {
-  background: rgba(47, 120, 156, 0.60);
+  background: rgba(99, 163, 171, 0.60);
   border-bottom: 2px outset white;
+}
+.g-buscar, .g-navegacion, .g-favoritos, .g-historial {
+  background-color: #7AB9D8;
+  padding: 1.2%;
+}
+.r-historial li a {
+  color: #233137 !important;
+  border: 0.1px outset gray;
+}
+.g-recetas-a {
+  background-color: #D9E6EC;
+  margin-bottom: 10px;
+}
+.g-recetas-b {
+  background-color: #D9E6EC;
+  margin-top: 10px;
 }
 .g-logo, .g-bloque-a {
   border-right: 2px outset white;
 }
+.g-pub {
+  padding: 1.2%;
+}
+.g-pub img {
+  width: 100%;
+  margin-left: 2%;
+}
 .row {
   padding-top: 1%;
+}
+.c-1a, .c-2a, .c-3a, .c-4a, .c-5a {
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 5%;
+}
+.c-5a {
+  text-align: justify;
 }
