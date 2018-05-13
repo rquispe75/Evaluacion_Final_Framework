@@ -1,21 +1,25 @@
+/* NOTE: Cambios generales de la pagina */
 body {
-  margin: 0 2% 0 2%;
+  margin: 0 4% 0 4%;
   background-image: url(../img/fondo.jpg);
   background-repeat: repeat-y;
   background-size: cover;
 }
-div{
-  border: 0px solid black;
-}
+/* NOTE: Cambios especificos de fuente */
 h4 {
 font-family: 'Indie Flower', cursive;
 }
-.g-contenido {
-  background: rgba(99, 163, 171, 0.60);
-}
+/* NOTE: Cambios en el encabezado */
 .g-encabezado {
   background: rgba(99, 163, 171, 0.60);
   border-bottom: 2px outset white;
+}
+/* NOTE: Cambios en el contenido general y contenido izquierdo */
+.g-logo, .g-bloque-a {
+  border-right: 2px outset white;
+}
+.g-contenido {
+  background: rgba(99, 163, 171, 0.60);
 }
 .g-buscar, .g-navegacion, .g-favoritos, .g-historial {
   background-color: #7AB9D8;
@@ -25,6 +29,7 @@ font-family: 'Indie Flower', cursive;
   color: #233137 !important;
   border: 0.1px outset gray;
 }
+/* NOTE: Cambios en el contenido derecho */
 .g-recetas-a {
   background-color: #D9E6EC;
   margin-bottom: 10px;
@@ -32,9 +37,6 @@ font-family: 'Indie Flower', cursive;
 .g-recetas-b {
   background-color: #D9E6EC;
   margin-top: 10px;
-}
-.g-logo, .g-bloque-a {
-  border-right: 2px outset white;
 }
 .g-pub {
   padding: 1.2%;
