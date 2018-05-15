@@ -9,13 +9,17 @@
   </head>
 
   <body>
+    <!-- NOTE: Contenido del encabezado (Logo, Slogan, Barra de navegacion) -->
     <div class="conteiner contenedor-encabezado">
       <div class="row encabezado">
+        <!-- NOTE: Logo -->
         <div class="col s3 m3 l2 xl2">
           <img class="responsive-img" src="img/logo-viaje.png" alt="Logo">
         </div>
+        <!-- NOTE: Barra de navegacion -->
         <div class="col s9 m9 l10 xl10">
-          <nav class="row conteiner contenedor-navegacion">
+          <!-- NOTE: Navegacion para dispositivos medianos y mas -->
+          <nav class="row conteiner contenedor-navegacion hide-on-small-only">
             <div class="nav-wrapper">
               <ul class="right">
                 <li><a class="waves-effect waves-dark btn">Inicio<i class="material-icons left">airplay</i></a></li>
@@ -25,15 +29,28 @@
               </ul>
             </div>
           </nav>
-          <div class="row conteiner">
+          <!-- NOTE: Navegacion para dispositivos pequeños -->
+          <nav class="row conteiner contenedor-navegacion hide-on-med-and-up">
+            <div class="nav-wrapper">
+              <ul class="right">
+                <li><a class="waves-effect waves-dark btn btn-small"><i class="material-icons center">airplay</i></a></li>
+                <li><a class="waves-effect waves-light btn btn-small"><i class="material-icons center">place</i></a></li>
+                <li><a class="waves-effect waves-light btn btn-small"><i class="material-icons center">airplanemode_active</i></a></li>
+                <li><a class="waves-effect waves-light btn btn-small"><i class="material-icons center">room_service</i></a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- NOTE: Slogan -->
+          <div class="row conteiner slogan">
             <h4>Tus viajes, Un sue&ntilde;o</h4>
           </div>
         </div>
       </div>
     </div>
-
+    <!-- NOTE: Contenido principal (Redes sociales, Blog, Perfil de Autor, Comentarios) -->
     <div class="conteiner contenedor-contenido">
       <div class="row">
+        <!-- NOTE: Redes Sociales -->
         <div class="col m1 l1 xl1 hide-on-small-only">
           <ul class="redes-sociales">
             <li><a href="#"><img src="img/bt-face.png" alt=""></a></li>
@@ -43,6 +60,7 @@
             <li><a href="#"><img src="img/bt-yotu.png" alt=""></a></li>
           </ul>
         </div>
+        <!-- NOTE: Imagenes de viajes -->
         <div class="col s12 m11 l11 xl11 img-viajes">
           <div class="row expanded img-viajes">
             <div class="col s12 m4 l4 xl4">
@@ -60,15 +78,16 @@
         </div>
       </div>
     </div>
-
-    <div class="conteiner prueba">
-      <div class="row a-prueba">
+    <!-- NOTE: Contenido del Blog -->
+    <div class="conteiner contenedor-blog">
+      <div class="row a-blog">
+        <!-- NOTE: Articulo 1 -->
         <div id="articulo" class="col s12 m9 l9">
           <div class="row c-articulo white z-depth-5">
             <div>
               <img src="img/egipto.jpg" alt="Imagen" class="responsive-img z-depth-5">
             </div>
-             <h4>Coliseo de Roma</h4>
+             <h4>Piramides de Egipto</h4>
             <div class="chip">
               14 de mayo del 2018
               <i class="close material-icons">today</i>
@@ -82,6 +101,7 @@
               <p>Egipto fue cuna de la antigua civilización egipcia, que junto con la mesopotámica fueron el origen de la actual cultura Occidental, influyendo decisivamente en la historia de la humanidad. Los restos de esta civilización jalonan el país como las pirámides y la gran esfinge o la ciudad meridional de Lúxor que contiene un gran número de restos antiguos, tales como el templo de Karnak y el Valle de los Reyes. Egipto es actualmente un centro político y cultural importante del Oriente Próximo y se le considera una potencia regional. Su actual forma de gobierno es la república semipresidencialista. Entre 2013 y 2014 estuvo bajo gobierno interino, formado tras el golpe de Estado de 2013 que derrocó al primer presidente democrático del país, Mohamed Morsi.</p>
           </div>
         </div>
+        <!-- NOTE: Perfil del Autor -->
         <div id="perfil" class="col s12 m3 l3">
           <div class="row c-perfil white z-depth-5">
             <div class="section">
@@ -90,18 +110,54 @@
               </div>
               <h4>Perfil del Autor</h4>
               <div class="divider"></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Soy Ricardo y nací en Buenos Aires. En el 2008 decidí que quería vivir viajando, y eso hice durante casi 10 años. Recorrí más de 45 países solo, con mi mochila, mi computadora y mi cámara, y me dediqué a registrar todas mis experiencias para después compartirlas en este blog, en mis libros y en revistas.Después de una década de vivir como un nómada digital me cansé de no tener un lugar fijo y elegí quedarme quieto —primero en Francia, ahora en Amsterdam— y dedicarme a proyectos más offline.</p>
             </div>
           </div>
         </div>
+        <!-- NOTE: Formulario de comentarios -->
         <div id="comentarios" class="col s12 m9 l9">
-          <div class="row c-comentarios white z-depth-5">
-            3868562398562387623865238562sdkghsñdkhgsdkhskd
+          <div class="row c-comentarios #80cbc4 teal lighten-3 z-depth-5">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">Nombres</label>
+                  <span class="helper-text">Ingrese su nombre</span>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Apellido</label>
+                  <span class="helper-text">Ingrese su apellido</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">chat</i>
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Comentario</label>
+                  <span class="helper-text">Ingrese su comentario</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">contact_mail</i>
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                  <span class="helper-text" data-error="Invalido" data-success="Correcto">Ingrese su correo electronico</span>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="row"></div>
+              <div class="row right">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Enviar<i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
     <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>

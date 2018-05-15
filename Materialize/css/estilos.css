@@ -1,3 +1,4 @@
+/* NOTE: Cambios generales de diseño */
 body {
   background-image: url("../img/fondo-2d.jpg");
   background-repeat: repeat-y;
@@ -5,59 +6,33 @@ body {
   background-attachment: fixed;
   font-size: 1em;
 }
-div {
-  border: 0.2px solid black;
-}
+/* NOTE: Cambios en el contenido de la barra de navegacion */
 .contenedor-navegacion {
   background-color: inherit !important;
   border: none !important;
   box-shadow: none !important;
 }
-.redes-sociales li a img {
-  width: 70%;
-  border-radius: 10px;
-}
-.img-viajes div img {
-  width: 100%;
-  margin-top: 2%;
-}
-.c-articulo, .c-perfil, .c-comentarios {
-  margin: 0.5%;
-  padding: 2%;
-}
-#articulo{
-  padding: 0 1% 0 1%;
-}
-#articulo img{
-  margin-top: 2%;
-  margin-right: 2%;
-  margin-bottom: 1%;
-  float: left;
-}
-#perfil{
-  text-align: center;
-  padding: 0.3% 1% 0 1%;
-}
-#perfil img{
-  width: 50%;
-  height: 150px;
-  margin-bottom: 2%;
-}
-#comentarios {
-  padding: 0 1% 0 1%;
-}
+.slogan {text-shadow: 2px 2px grey;}
+/* NOTE: Ajustes en la barra de Redes Sociales */
+.redes-sociales li a img { width: 70%; border-radius: 10px;}
+
+/* NOTE: Ajustes en las Imagenes */
+.img-viajes div img { width: 100%; margin-top: 2%;}
+
+/* NOTE: Cambios en el contenido del Blog */
+.contenedor-blog {margin: 0 1% 0 1%;}
+.c-articulo, .c-perfil, .c-comentarios { margin: 0.5%; padding: 2%;}
+#articulo{ padding: 0 1% 0 1%;}
+#articulo img{ margin-top: 2%; margin-right: 2%; margin-bottom: 1%; float: left;}
+#perfil{ text-align: center; padding: 0.3% 1% 0 1%;}
+#perfil img{ width: 50%; height: 150px; margin-bottom: 2%;}
+#comentarios {padding: 0 1% 0 1%;}
+
+/* NOTE: Cambios estructurales en dispositivos pequeños */
 @media (max-width: 600px) {
-  .a-prueba {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #articulo {
-    order: 1;
-  }
-  #perfil {
-    order: 3;
-  }
-  #comentarios {
-    order: 2;
-  }
+  body {width: 95%; margin-left: 2.5%}
+  .a-blog {display: flex; flex-wrap: wrap;}
+  #articulo {order: 1;}
+  #perfil {order: 3;}
+  #comentarios {order: 2;}
 }
